@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build parent_child",
+        "type": "shell",
+        "command": "/usr/bin/gcc",
+        "args": [
+          "parent_child.c",
+          "-o",
+          "parent_child"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Generated task for building parent_child."
+      },
+      {
+        "label": "run parent_child",
+        "type": "shell",
+        "command": "./parent_child",
+        "group": "test",
+        "problemMatcher": []
+      }
+    ]
+  }
+  
